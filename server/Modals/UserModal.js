@@ -26,12 +26,12 @@ const userSchema = new Schema(
       required: true,
       minlength: 6, // Ensures password is at least 6 characters long
     },
-    // role: {
-    //   type: String,
-    //   enum: ["user", "admin", "student", "trainer"],
-    //   default: "user",
-    //   required: true,
-    // },
+    role: {
+      type: String,
+      enum: ["user", "admin", "student", "trainer"],
+      default: "user",
+      required: true,
+    },
     isActive: {
       type: Boolean,
       default: true,

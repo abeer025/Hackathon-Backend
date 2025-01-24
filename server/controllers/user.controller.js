@@ -164,7 +164,24 @@ export const getUserProfile = async (req, res) => {
   }
 };
 
+// Update user profile
+// export const updateUserProfile = async (req, res) => {
+//   try {
+//     const userId = req.user.id; // Assuming user ID is attached to req.user by isAuthenticated middleware
+//     const updatedData = req.body; // Contains the fields to update
 
+//     // Find user by ID and update their profile
+//     const user = await UserModal.findByIdAndUpdate(userId, updatedData, {
+//       new: true, // Return the updated document
+//       runValidators: true, // Run validation on updated fields
+//     });
 
+//     if (!user) {
+//       return res.status(404).json({ message: "User not found" });
+//     }
 
-
+//     res.status(200).json({ success: true, user });
+//   } catch (error) {
+//     res.status(500).json({ message: "Server error", error: error.message });
+//   }
+// };

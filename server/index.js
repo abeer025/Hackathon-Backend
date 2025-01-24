@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(cors());
 
 // API Routes
-app.use("/api/v1/user", user);
+app.use("/api/user", user);
 
 // Start the server
 app.listen(PORT, () => {
